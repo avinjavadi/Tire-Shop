@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #1D1D1F;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    margin-top: 20px;
+    background-color: #353340;
+}
+
+.navbar-brand:hover b {
+    color: #5BC8C5;
+    transition: 0.3s;
+}
+
+.navbar-brand b {
+    font-size: medium;
+    transition: 0.3s;
+    color: white;
+}
+
+#nav-svgs svg {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#nav-svgs svg:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.fill-btn {
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #5BC8C5;
+    color: #191C1B;
+    border-radius: 10px;
+}
+
+.fill-btn:hover {
+    background-color: #399e9a;
+    color: #191C1B;
+}
+
+#filters {
+    background-color: #353340;
+    border-radius: 20px;
+    width: 295px;
+}
+
+#filters>button {
+    background-color: #353340;
+    color: #5BC8C5;
+}
+
+#filters>button:focus,
+#filters>button:active {
+    border: 0;
+}
+
+@keyframes animation-up {
+    0% {
+        transform: scaleY(-1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes animation-down {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(-1);
+    }
+}
+
+.animate-up svg {
+    animation-duration: 0.4s;
+    animation-name: animation-up;
+    animation-fill-mode: forwards;
+}
+
+.animate-down svg {
+    animation-duration: 0.4s;
+    animation-name: animation-down;
+    animation-fill-mode: forwards;
+}
+
+.form-check-input {
+    background-color: #353340;
+    border: 2px solid #828282;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #5BC8C5;
+    border: 2px solid #5BC8C5;
+}
+
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+
+#size-from,
+#size-till,
+#price-from,
+#price-till {
+    background-color: #353340;
+    border: 2px solid #828282;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-outline-secondary {
+    color: white;
+    border: 2px solid #747474;
+    border-radius: 10px;
+    font-weight: 500px;
+}
+
+.product {
+    width: 100%;
+    height: 455px;
+    background-color: #353340;
+    border-radius: 20px;
+}
+
+.product .btn {
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #5BC8C5;
+    color: #191C1B;
+}
+
+.product .btn:hover {
+    background-color: #399e9a;
+    color: #191C1B;
+}
+
+.product .price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #5BC8C5;
+    margin: 0;
+}
+
+.filter {
+    background-color: #5BC8C5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter>p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191C1B;
+}
+
+footer {
+    background-color: #0C0C0C;
+}
+
+footer p {
+    font-size: 14px;
+    padding-right: 15px;
+    ;
+}
+
+footer .row {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+footer a {
+    color: white;
+    transition: 0.4s;
+}
+
+footer a:hover {
+    color: #5BC8C5;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+footer a:hover svg path {
+    fill: #5BC8C5;
+    transition: 0.4s;
+}
+
+footer a svg path {
+    fill: white;
+    transition: 0.4s;
+}

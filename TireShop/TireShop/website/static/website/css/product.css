@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #1D1D1F;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  margin-top: 20px;
+  background-color: rgb(53, 51, 64);
+}
+
+.navbar-brand:hover b {
+  color: #5BC8C5;
+  transition: 0.3s;
+}
+
+.navbar-brand b {
+  font-size: medium;
+  transition: 0.3s;
+  color: white;
+}
+
+#nav-svgs svg {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+#nav-svgs svg:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #5BC8C5;
+  color: #191C1B;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #399e9a;
+  color: #191C1B;
+}
+
+.input-number {
+  outline: none;
+  width: 60px;
+  background-color: #353340;
+  color: white !important;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 0;
+  height: 36px;
+  user-select: none;
+  color: #1D1D1F;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  background: #5BC8C5;
+  color: #1D1D1F;
+  font-weight: bold;
+  font-size: 24px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+  background: #5BC8C5;
+}
+
+.input-number-decrement {
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.input-number-increment {
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.product {
+  width: 265px;
+  height: 440px;
+  background-color: #353340;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.product .btn {
+  width: 120px;
+  height: 40px;
+}
+
+.product .price {
+  font-weight: 700;
+  font-size: 20px;
+  color: #5BC8C5;
+  margin: 0;
+}
+
+footer {
+  background-color: #0C0C0C;
+}
+
+footer p {
+  font-size: 14px;
+  padding-right: 15px;
+  ;
+}
+
+footer .row {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+footer a {
+  color: white;
+  transition: 0.4s;
+}
+
+footer a:hover {
+  color: #5BC8C5;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+footer a:hover svg path {
+  fill: #5BC8C5;
+  transition: 0.4s;
+}
+
+footer a svg path {
+  fill: white;
+  transition: 0.4s;
+}

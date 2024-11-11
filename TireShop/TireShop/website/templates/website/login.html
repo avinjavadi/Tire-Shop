@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TireShop - Login</title>
+	<link href = "{% static 'website/css/login.css' %}" rel="stylesheet">
+</head>
+<body>
+	{% if wrong_credentials %}
+	<h3 id="wrong">wrong credentials</h3>
+	{% endif %}
+	<div class="box">
+		<form action="/login/" method="post" autocomplete="off">
+			{% csrf_token %}
+			<h2>Log in</h2>
+			<div class="inputBox">
+				{{ form.phone_number }}
+				<span>Phone Number</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				{{ form.password }}
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="/signup">don't have an account?</a>
+				<a href="/signup">Signup</a>
+			</div>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
